@@ -1,0 +1,75 @@
+[debug] [2021-11-13T13:42:26.351Z] ----------------------------------------------------------------------
+[debug] [2021-11-13T13:42:26.379Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Abid Anjum Khan\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2021-11-13T13:42:26.379Z] CLI Version:   9.22.0
+[debug] [2021-11-13T13:42:26.379Z] Platform:      win32
+[debug] [2021-11-13T13:42:26.379Z] Node Version:  v14.17.1
+[debug] [2021-11-13T13:42:26.469Z] Time:          Sat Nov 13 2021 19:42:26 GMT+0600 (Bangladesh Standard Time)
+[debug] [2021-11-13T13:42:26.469Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-11-13T13:42:26.597Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-11-13T13:42:26.598Z] > authorizing via signed-in user (anjumniloy001@gmail.com)
+[debug] [2021-11-13T13:42:26.598Z] [iam] checking project ztm-camera for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2021-11-13T13:42:26.602Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/ztm-camera:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2021-11-13T13:42:28.370Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 13 Nov 2021 13:42:28 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=1208","alt-svc":"clear","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-11-13T13:42:28.374Z] > refreshing access token with scopes: []
+[debug] [2021-11-13T13:42:28.374Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-11-13T13:42:28.628Z] <<< HTTP RESPONSE 200 {"cache-control":"no-cache, no-store, max-age=0, must-revalidate","expires":"Mon, 01 Jan 1990 00:00:00 GMT","date":"Sat, 13 Nov 2021 13:42:29 GMT","pragma":"no-cache","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"clear","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-11-13T13:42:28.743Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/ztm-camera [none]
+[debug] [2021-11-13T13:42:29.242Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/ztm-camera 200
+[debug] [2021-11-13T13:42:29.242Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/ztm-camera {"projectId":"ztm-camera","projectNumber":"90907131473","displayName":"ztm-camera","name":"projects/ztm-camera","resources":{"hostingSite":"ztm-camera"},"state":"ACTIVE"}
+[info] 
+[info] === Deploying to 'ztm-camera'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2021-11-13T13:42:29.250Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-11-13T13:42:29.250Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-11-13T13:42:29.423Z] <<< HTTP RESPONSE 200 {"pragma":"no-cache","cache-control":"no-cache, no-store, max-age=0, must-revalidate","date":"Sat, 13 Nov 2021 13:42:30 GMT","expires":"Mon, 01 Jan 1990 00:00:00 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"clear","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-11-13T13:42:29.501Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/ztm-camera/versions  
+ {"config":{},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2021-11-13T13:42:31.386Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 13 Nov 2021 13:42:31 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"clear","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] i  hosting[ztm-camera]: beginning deploy... 
+[info] i  hosting[ztm-camera]: found 18 files in build 
+[debug] [2021-11-13T13:42:31.648Z] > refreshing access token with scopes: []
+[debug] [2021-11-13T13:42:31.649Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-11-13T13:42:31.651Z] [hosting] hash cache [YnVpbGQ] stored for 18 files
+[debug] [2021-11-13T13:42:31.652Z] [hosting][hash queue][FINAL] {"max":184,"min":5,"avg":21.833333333333332,"active":0,"complete":18,"success":18,"errored":0,"retried":0,"total":18,"elapsed":204}
+[debug] [2021-11-13T13:42:31.837Z] <<< HTTP RESPONSE 200 {"pragma":"no-cache","cache-control":"no-cache, no-store, max-age=0, must-revalidate","expires":"Mon, 01 Jan 1990 00:00:00 GMT","date":"Sat, 13 Nov 2021 13:42:32 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"clear","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-11-13T13:42:31.895Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/sites/ztm-camera/versions/235ca36563b5ef91:populateFiles [none]
+[debug] [2021-11-13T13:42:31.895Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/sites/ztm-camera/versions/235ca36563b5ef91:populateFiles {"files":{"/favicon.ico":"eae62e993eb980ec8a25058c39d5a51feab118bd2100c4deebb2a9c158ec11f9","/logo192.png":"3ee59515172ee198f3be375979df15ac5345183e656720a381b8872b2a39dc8b","/logo512.png":"ee7e2f3fdb8209c4b6fd7bef6ba50d1b9dba30a25bb5c3126df057e1cb6f5331","/manifest.json":"aff3449bdc238776f5d6d967f19ec491b36aed5fb7f23ccff6500736fd58494a","/robots.txt":"bfe106a3fb878dc83461c86818bf74fc1bdc7f28538ba613cd3e775516ce8b49","/asset-manifest.json":"188449da5b8486bc13fb79250776534bacec7308651a39404f8fb1281b053eeb","/index.html":"662c46334785447900ac6b37510d278260e2f1c0911cf58d1aba7e5a6b81e767","/static/css/main.8c8b27cf.chunk.css":"850bc16f7678f79f886c9febec0b79034002882ca68aeb13470b574d81dac66a","/static/css/main.8c8b27cf.chunk.css.map":"4328ed535cb7dddf41685d7de12d64bd6864c881392ce1c400e9cbeb8a7e6b82","/static/js/2.a9a9281f.chunk.js.LICENSE.txt":"c585584484a53b95995eae5e565865edbb98d9007477a6dfd1db955529815c2b","/static/js/3.d8935960.chunk.js":"b8b9bc6871c7e74387e8e2183432abfb6dae224accd6a5accc0f11f9e228cbe8","/static/js/3.d8935960.chunk.js.map":"a46f29d45d83aaf4ec7865722e2f4e5fc117cc99a5f0e2c68ec626f1bce1eaf3","/static/js/main.3b5b596c.chunk.js":"47a63fc73463585973a0b74030686a68a33de1212272db72e7d349281ca4dcdd","/static/js/main.3b5b596c.chunk.js.map":"f86f535c66b890e1ae3e9126d93334f5b0964b97152943fb076e8adb1b349cff","/static/js/runtime-main.829b462e.js":"ea04fe372aa022f626812bf0c658f4074bb605a35f74b0524663ec7afef85e62","/static/js/runtime-main.829b462e.js.map":"791ddf4a6f037b69def2077f9f23e6f2f1688c7f8f252ecb9abfd9944f281f42","/static/js/2.a9a9281f.chunk.js":"0758f43234273b360042e5cdf87f902919d2c8811d336695b0d2faa743e3c208","/static/js/2.a9a9281f.chunk.js.map":"c497e297f302b4b229c674fcb9a6a4e37ba57157abcdaa18d3658ad8d2535cf7"}}
+[debug] [2021-11-13T13:42:33.555Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/sites/ztm-camera/versions/235ca36563b5ef91:populateFiles 200
+[debug] [2021-11-13T13:42:33.555Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/sites/ztm-camera/versions/235ca36563b5ef91:populateFiles {"uploadUrl":"https://upload-firebasehosting.googleapis.com/upload/sites/ztm-camera/versions/235ca36563b5ef91/files"}
+[debug] [2021-11-13T13:42:33.555Z] [hosting][populate queue][FINAL] {"max":1907,"min":1907,"avg":1907,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":1907}
+[debug] [2021-11-13T13:42:33.556Z] [hosting] uploads queued: 0
+[debug] [2021-11-13T13:42:33.556Z] [hosting][upload queue][FINAL] {"max":0,"min":9999999999,"avg":0,"active":0,"complete":0,"success":0,"errored":0,"retried":0,"total":0,"elapsed":1636810953556}
+[info] +  hosting[ztm-camera]: file upload complete 
+[debug] [2021-11-13T13:42:33.557Z] [hosting] deploy completed after 2170ms
+[debug] [2021-11-13T13:42:33.601Z] [
+  {
+    "config": {
+      "public": "build",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "site": "ztm-camera"
+    },
+    "site": "ztm-camera",
+    "version": "sites/ztm-camera/versions/235ca36563b5ef91"
+  }
+]
+[info] i  hosting[ztm-camera]: finalizing version... 
+[debug] [2021-11-13T13:42:33.745Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-11-13T13:42:33.746Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-11-13T13:42:33.942Z] <<< HTTP RESPONSE 200 {"cache-control":"no-cache, no-store, max-age=0, must-revalidate","pragma":"no-cache","expires":"Mon, 01 Jan 1990 00:00:00 GMT","date":"Sat, 13 Nov 2021 13:42:34 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"clear","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-11-13T13:42:34.041Z] >>> HTTP REQUEST PATCH https://firebasehosting.googleapis.com/v1beta1/sites/ztm-camera/versions/235ca36563b5ef91?updateMask=status  
+ {"status":"FINALIZED"}
+[debug] [2021-11-13T13:42:55.336Z] Error: connect ETIMEDOUT 142.250.193.138:443
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1148:16)
+[error] 
+[error] Error: Server Error. connect ETIMEDOUT 142.250.193.138:443
