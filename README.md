@@ -23,11 +23,4 @@ Live site link of this website is:  https://ztm-camera.web.app/
 8. The admin will be able to delete anyone's order.
 
 
-Accordion
-img: https://w0.peakpx.com/wallpaper/761/707/HD-wallpaper-cameras-retro-lens-vintage-technology.jpg
-
-1st title: "I was there"
-des: Nowadays diners in restaurants might greet the arrival of their food with a few excited clicks of their phone to capture that sushi or pizza for posterity. Go back a couple of decades and the idea of showing a friend a picture of a dinner you'd been served earlier would raise eyebrows.
-
-
 
